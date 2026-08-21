@@ -186,7 +186,7 @@
 
 @media (max-width:768px) {
     .hero {
-        height: 80vh;
+        height:600px;
     }
 
     .heroText h1 {
@@ -874,7 +874,7 @@
     width: 5%;
 }
 
-.serviceBoxes {
+.serviceBox1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
@@ -941,13 +941,16 @@
 .DisabledServiceNavigation svg{
     color: var(--mid-grey) !important;
 }
+ .serviceBox2,.serviceBox3{
+        display: none;
+    }
 
 @media (max-width:1440px) {
     .services {
         padding: 60px 16px;
     }
 
-    .serviceBoxes {
+    .serviceBox1 {
         gap: 24px;
     }
 
@@ -973,7 +976,7 @@
         padding: 60px 16px;
     }
 
-    .serviceBoxes {
+    .serviceBox1 {
         gap: 24px;
     }
 
@@ -1034,9 +1037,14 @@
     .services {
         padding-block: 30px;
     }
-    .serviceBoxes{
-        grid-template-columns: 1fr 1fr;
+    .serviceBox1,.serviceBox3{
+        display: none;
     }
+   .serviceBox2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
     .servicesText h2 {
         font-size: var(--fs-md);
     }
@@ -1045,9 +1053,15 @@
     }
 }
 @media (max-width:480px) {
- .serviceBoxes{
-       grid-template-columns: 1fr;
- }
+ .serviceBox3{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:24px;
+}
+
+  .serviceBox1,.serviceBox2{
+        display: none;
+    }
 }
 
 /* products */

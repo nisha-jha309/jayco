@@ -162,8 +162,21 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <motion.div className={styles.serviceBoxes} variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                        {innerWidth > 576 && servicesData.slice(currentService, currentService + 3).map((item, index) => (
+                    <motion.div className={styles.serviceBoxes}>
+                        <motion.div className={styles.serviceBox1} variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                            {servicesData.slice(currentService, currentService + 3).map((item, index) => (
+                                <motion.div variants={containerItem} className={styles.serviceBox}>
+                                    <div className={styles.serviceImageBox}><img src={item.src} alt="" className={styles.serviceImage} /></div>
+                                    <div className={styles.serviceBoxText}>
+                                        <h3>{item.serviceTitle}</h3>
+                                        <p>{item.serviceDescription}</p>
+                                        <Link to="/">Learn More <BsArrowRight size={24} /></Link>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </motion.div>
+                        <motion.div className={styles.serviceBox2} variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                        {servicesData.slice(currentService, currentService + 2).map((item, index) => (
                             <motion.div variants={containerItem} className={styles.serviceBox}>
                                 <div className={styles.serviceImageBox}><img src={item.src} alt="" className={styles.serviceImage} /></div>
                                 <div className={styles.serviceBoxText}>
@@ -173,7 +186,9 @@ export default function Home() {
                                 </div>
                             </motion.div>
                         ))}
-                        {innerWidth < 576 && servicesData.slice(currentService, currentService + 2).map((item, index) => (
+                        </motion.div>
+                        <motion.div className={styles.serviceBox3} variants={container} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                        {servicesData.slice(currentService, currentService + 1).map((item, index) => (
                             <motion.div variants={containerItem} className={styles.serviceBox}>
                                 <div className={styles.serviceImageBox}><img src={item.src} alt="" className={styles.serviceImage} /></div>
                                 <div className={styles.serviceBoxText}>
@@ -183,16 +198,7 @@ export default function Home() {
                                 </div>
                             </motion.div>
                         ))}
-                        {innerWidth < 480 && servicesData.slice(currentService, currentService + 1).map((item, index) => (
-                            <motion.div variants={containerItem} className={styles.serviceBox}>
-                                <div className={styles.serviceImageBox}><img src={item.src} alt="" className={styles.serviceImage} /></div>
-                                <div className={styles.serviceBoxText}>
-                                    <h3>{item.serviceTitle}</h3>
-                                    <p>{item.serviceDescription}</p>
-                                    <Link to="/">Learn More <BsArrowRight size={24} /></Link>
-                                </div>
-                            </motion.div>
-                        ))}
+                        </motion.div>
                     </motion.div>
                 </div>
             </div>
