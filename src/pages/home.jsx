@@ -170,7 +170,7 @@ export default function Home() {
                                     <div className={styles.serviceBoxText}>
                                         <h3>{item.serviceTitle}</h3>
                                         <p>{item.serviceDescription}</p>
-                                        <Link to="/">Learn More <BsArrowRight className={styles.arrowIcon1} size={24} /></Link>
+                                        <Link to="/">Learn More <BsArrowRight className={styles.arrowIcon} size={24} /></Link>
                                     </div>
                                 </motion.div>
                             ))}
@@ -215,7 +215,7 @@ export default function Home() {
                                 <div className={styles.productBoxText}>
                                     <h3>{item.productName}</h3>
                                     <p>{item.productDescription}</p>
-                                    <Link to="/">view details <BsArrowRight className={styles.arrowIcon2} size={24} /></Link>
+                                    <Link to="/">view details <BsArrowRight className={styles.arrowIcon} size={24} /></Link>
                                 </div>
 
                             </motion.div>
