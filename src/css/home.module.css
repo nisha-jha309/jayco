@@ -1710,7 +1710,7 @@
     .processText {
         gap: 12px;
         margin-bottom: 30px;
-        align-items: left;
+        align-items: flex-start;
     }
 
     .processText>h2 {
