@@ -252,6 +252,10 @@
 }
 
 @media (max-width:990px) {
+    .logo {
+        width: 50px;
+        height: auto;
+    }
     .nav {
         padding-block: 10px;
     }
@@ -260,3 +264,9 @@
         padding: 10px;
     }
 }
+@media (max-width:768px){
+    .logo {
+        width: 40px;
+        height: auto;
+    }
+} 
