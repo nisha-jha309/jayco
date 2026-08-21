@@ -69,12 +69,12 @@ export default function Navbar() {
                     </div>
                     <div className={styles.rightNav}>
                         <div className={styles.search}>
-                            <div className={styles.searchIcon}><HiOutlineSearch size={24} /></div>
+                            <div className={styles.searchIcon}><HiOutlineSearch size={16} /></div>
                         </div>
                         <div className={styles.countryDiv} onClick={() => setIsCountryOpen(prev => !prev)}>
-    <div className={styles.globeIcon}> <FiGlobe size={24} /> </div>
+    <div className={styles.globeIcon}> <FiGlobe size={16} /> </div>
     <div className={styles.countryName}>{selectedCountry}</div>
-    {isCountryOpen ? <RiArrowDropUpLine size={24} color="white" /> : <RiArrowDropDownLine size={24} color="white"/>
+    {isCountryOpen ? <RiArrowDropUpLine size={16} color="white" /> : <RiArrowDropDownLine size={16} color="white"/>
     }
     {isCountryOpen && (
         <div className={styles.countryDropdown}>
@@ -89,7 +89,7 @@ export default function Navbar() {
                         <Link className={styles.requestQuoteBtn} to="/">request quote</Link>
                         <div className={styles.mobileNav}>
                             <div className={styles.menuIcon} onClick={() => { setIsOpen(prev => !prev) }}>
-                                <CiMenuBurger size={24} />
+                                <CiMenuBurger size={16} />
                             </div>
                             {isOpen && (<div className={styles.menuNav}>
                                 {navLinks.map((item, index) => (

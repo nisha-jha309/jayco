@@ -186,7 +186,7 @@
 
 @media (max-width:768px) {
     .hero {
-        height:600px;
+        height:70vh;
     }
 
     .heroText h1 {
@@ -1710,6 +1710,7 @@
     .processText {
         gap: 12px;
         margin-bottom: 30px;
+        align-items: left;
     }
 
     .processText>h2 {

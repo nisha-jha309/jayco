@@ -145,6 +145,7 @@
     display: none;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menuIcon {
@@ -269,15 +270,37 @@
     }
 }
 @media (max-width:768px){
-    .logo {
+    .mobileNavContent{
+        gap:20px;
+    }
+    .rightNav{
+        gap: 8px;
+    }
+    /* .logo {
         width: 40px;
         height: auto;
-    }
+    } */
       .logoIcon{
         width: 50px;
         height:auto;
+    }
+    .globeIcon {
+    padding-right:6px;
+    margin-right:6px;
+    }
+    .countryDiv{
+        gap: 0;
+    }
+    .countryName{
+        font-size: var(--fs-xs);
+        white-space: nowrap;
     }
     .requestQuoteBtn{
         padding: 4px;
     }
 } 
+@media (max-width:480px){
+    .requestQuoteBtn{
+        font-size: 10px;
+    }
+}
