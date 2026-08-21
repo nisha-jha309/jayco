@@ -523,6 +523,9 @@
 }
 
 @media (max-width:1024px) {
+     .about {
+        padding: 50px 16px;
+    }
     .aboutText p {
         font-size: var(--fs-s);
         width: 70%;
@@ -700,7 +703,6 @@
         margin-bottom: 32px;
     }
 }
-
 @media (max-width:1160px) {
     .capabilityBoxes {
         grid-template-columns: repeat(3, 1fr);
@@ -714,13 +716,14 @@
         margin-bottom: 24px;
     }
 }
-
 @media (max-width:1024px) {
+        .capabilities {
+        padding-bottom: 50px;
+    }
     .capabilityBox p {
         min-height: 28px;
     }
 }
-
 @media (max-width:990px) {
     .capabilityBoxes {
         display: grid;
@@ -747,7 +750,6 @@
         margin-bottom: 0;
     }
 }
-
 @media (max-width:795px) {
     .capabilitiesText h2 {
         font-size: var(--fs-xl);
@@ -771,7 +773,6 @@
         font-size: var(--fs-xs);
     }
 }
-
 @media (max-width:768px) {
     .capabilities {
         padding-bottom: 40px;
@@ -781,8 +782,10 @@
         gap: 12px;
     }
 }
-
 @media (max-width:576px) {
+    .capabilities {
+        padding-bottom: 30px;
+    }
     .capabilitiesContent {
         gap: 30px;
     }
@@ -819,7 +822,6 @@
         text-align: left;
     }
 }
-
 @media (max-width:430px) {
     .capabilityBoxText {
         min-width: 0;
@@ -830,7 +832,6 @@
         min-width: 0;
     }
 }
-
 @media (max-width:376px) {
     .capabilityBoxText {
         min-width: 0;
@@ -973,7 +974,7 @@
 
 @media (max-width:1024px) {
     .services {
-        padding: 60px 16px;
+        padding: 50px 16px;
     }
 
     .serviceBox1 {
@@ -1030,6 +1031,10 @@
     }
     .serviceBoxText a{
         font-size: var(--fs-xs);
+    }
+     .arrowIcon1{
+        width: 16px;
+        height: 16px;
     }
 }
 
@@ -1153,20 +1158,16 @@
     .products {
         padding: 60px 16px;
     }
-
     .productBoxes {
         gap: 24px;
     }
-
-    .productImageBox {
+  .productImageBox {
         height: 135px;
     }
-
     .productBox h3 {
         margin-bottom: 16px;
     }
 }
-
 @media (max-width:1280px) {
     .productBoxText {
         padding: 20px;
@@ -1184,8 +1185,10 @@
         font-size: var(--fs-s);
     }
 }
-
 @media (max-width:1024px) {
+     .products {
+        padding: 50px 16px;
+    }
     .productBoxText {
         padding: 16px;
     }
@@ -1194,17 +1197,21 @@
         min-height: 42px;
     }
 }
-
 @media (max-width:768px) {
+      .products {
+        padding: 40px 16px;
+    }
     .productsText {
         gap: 12px;
     }
-
     .productsText h2 {
         font-size: var(--fs-xl);
     }
+     .arrowIcon2{
+        width: 16px;
+        height: 16px;
+    }
 }
-
 @media (max-width:865px) {
     .productBoxes {
         grid-template-columns: repeat(2, 1fr);
@@ -1215,8 +1222,10 @@
         margin-bottom: 12px;
     }
 }
-
 @media (max-width:576px) {
+    .products {
+        padding: 30px 16px;
+    }
     .productBoxes {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -1246,13 +1255,11 @@
         font-size: var(--fs-xs);
     }
 }
-
 @media (max-width:385px) {
     .productImageBox {
         width: 30%;
     }
 }
-
 @media (max-width:335px) {
     .productImageBox {
         max-height: none;
@@ -1325,16 +1332,13 @@
     .industries {
         padding: 60px 16px;
     }
-
     .industryBoxes {
         gap: 24px;
     }
-
     .industryBox img {
         height: 80px;
     }
 }
-
 @media (max-width:1280px) {
     .industryBoxes {
         grid-template-columns: repeat(3, 1fr);
@@ -1349,8 +1353,15 @@
         font-size: var(--fs-s);
     }
 }
-
+@media (max-width:1024px){
+     .industries {
+        padding: 50px 16px;
+    }
+}
 @media (max-width:768px) {
+     .industries {
+        padding: 40px 16px;
+    }
     .industriesText {
         gap: 12px;
     }
@@ -1364,13 +1375,14 @@
         margin-bottom: 12px;
     }
 }
-
 @media (max-width:576px) {
+      .industries {
+        padding: 30px 16px;
+    }
     .industryBoxes {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 @media (max-width:480px) {
     .industryBoxes {
         grid-template-columns: repeat(1, 1fr);
@@ -1393,7 +1405,6 @@
     width: 100%;
     background-color: var(--grey);
 }
-
 .whyContent {
     max-width: 1440px;
     width: 100%;
@@ -1401,17 +1412,14 @@
     grid-template-columns: 1fr 1fr;
     gap: 32px;
 }
-
 .whyImageBox {
     width: 100%;
     height: 370px;
     overflow: hidden;
 }
-
 .whyText {
     align-self: center;
 }
-
 .whyImage {
     height: 100%;
     width: 100%;
@@ -1478,7 +1486,6 @@
         gap: 30px;
     }
 }
-
 @media (max-width:1024px) {
     .featuresBoxes {
         gap: 20px;
@@ -1497,7 +1504,6 @@
         height: 28px;
     }
 }
-
 @media (max-width:990px) {
     .why {
         align-items: stretch;
@@ -1516,13 +1522,12 @@
         gap: 15px;
     }
 }
-
 @media (max-width:768px) {
     .whyContent {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: none;
+        gap:0;
     }
 
     .whyImageBox {
@@ -1530,7 +1535,7 @@
     }
 
     .whyText {
-        padding: 30px 16px;
+        padding: 40px 16px;
     }
 
     .whyText>h2 {
@@ -1542,7 +1547,11 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
+@media (max-width:576px){
+      .whyText {
+        padding: 30px 16px;
+    }
+}
 @media (max-width:375px) {
     .featuresBoxes {
         grid-template-columns: repeat(1, 1fr);
@@ -1710,7 +1719,6 @@
     .processText {
         gap: 12px;
         margin-bottom: 30px;
-        align-items: flex-start;
     }
 
     .processText>h2 {
@@ -1748,7 +1756,7 @@
 }
 
 /* extra */
-.etxra {
+.extra {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1864,7 +1872,7 @@
 }
 
 @media (max-width:1440px) {
-    .etxra {
+    .extra {
         padding: 60px 16px;
     }
 
@@ -1877,7 +1885,6 @@
         width: 300px;
     }
 }
-
 @media (max-width:1280px) {
     .sustainibityContent {
         grid-template-columns: repeat(1, 1fr);
@@ -1891,7 +1898,6 @@
         font-size: var(--fs-s);
     }
 }
-
 @media (max-width:1080px) {
     .insightDeta {
         gap: 10px;
@@ -1901,7 +1907,11 @@
         font-size: var(--fs-xs);
     }
 }
-
+@media (max-width:1024px){
+    .extra {
+        padding: 50px 16px;
+    }
+}
 @media (max-width:990px) {
     .extraContent {
         grid-template-columns: repeat(1, 1fr);
@@ -1929,10 +1939,9 @@
         width: 100%;
     }
 }
-
 @media (max-width:768px) {
     .extra {
-        padding: 30px 16px;
+        padding: 40px 16px;
     }
 
     .quality>h2,
@@ -1946,6 +1955,11 @@
         padding: 20px 0;
         margin: 20px 0;
 
+    }
+}
+@media (max-width:576px){
+     .extra {
+        padding: 30px 16px;
     }
 }
 

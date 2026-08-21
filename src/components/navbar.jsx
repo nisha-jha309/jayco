@@ -43,7 +43,7 @@ export default function Navbar() {
                     </div>
                     <div className={styles.rightNav}>
                         <div className={styles.search}>
-                            <div className={styles.searchIcon}><HiOutlineSearch size={24} /></div>
+                            <Link className={styles.searchIcon} to="/"><HiOutlineSearch size={24} /></Link>
                         </div>
                         <div className={styles.countryDiv} onClick={() => setIsCountryOpen(prev => !prev)}>
                             <div className={styles.globeIcon}> <FiGlobe size={24} /> </div>
@@ -60,7 +60,7 @@ export default function Navbar() {
                                 </div>
                             )}
                         </div>
-                        <Link className={styles.requestQuoteBtn}>request quote</Link>
+                        <Link className={styles.requestQuoteBtn} to ="/">request quote</Link>
                     </div>
                 </div>
                 <div className={styles.mobileNavContent}>
@@ -69,7 +69,7 @@ export default function Navbar() {
                     </div>
                     <div className={styles.rightNav}>
                         <div className={styles.search}>
-                            <div className={styles.searchIcon}><HiOutlineSearch size={16} /></div>
+                            <Link className={styles.searchIcon} to="/"><HiOutlineSearch size={16} /></Link>
                         </div>
                         <div className={styles.countryDiv} onClick={() => setIsCountryOpen(prev => !prev)}>
     <div className={styles.globeIcon}> <FiGlobe size={16} /> </div>

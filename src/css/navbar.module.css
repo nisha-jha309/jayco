@@ -89,6 +89,7 @@
 
 .searchIcon {
     color: var(--white);
+    text-decoration: none;
 }
 
 .countryDiv {

@@ -170,7 +170,7 @@ export default function Home() {
                                     <div className={styles.serviceBoxText}>
                                         <h3>{item.serviceTitle}</h3>
                                         <p>{item.serviceDescription}</p>
-                                        <Link to="/">Learn More <BsArrowRight size={24} /></Link>
+                                        <Link to="/">Learn More <BsArrowRight className={styles.arrowIcon1} size={24} /></Link>
                                     </div>
                                 </motion.div>
                             ))}
@@ -182,7 +182,7 @@ export default function Home() {
                                 <div className={styles.serviceBoxText}>
                                     <h3>{item.serviceTitle}</h3>
                                     <p>{item.serviceDescription}</p>
-                                    <Link to="/">Learn More <BsArrowRight size={24} /></Link>
+                                    <Link to="/">Learn More <BsArrowRight className={styles.arrowIcon1} size={24} /></Link>
                                 </div>
                             </motion.div>
                         ))}
@@ -194,7 +194,7 @@ export default function Home() {
                                 <div className={styles.serviceBoxText}>
                                     <h3>{item.serviceTitle}</h3>
                                     <p>{item.serviceDescription}</p>
-                                    <Link to="/">Learn More <BsArrowRight size={24} /></Link>
+                                    <Link to="/">Learn More <BsArrowRight className={styles.arrowIcon1} size={24} /></Link>
                                 </div>
                             </motion.div>
                         ))}
@@ -215,7 +215,7 @@ export default function Home() {
                                 <div className={styles.productBoxText}>
                                     <h3>{item.productName}</h3>
                                     <p>{item.productDescription}</p>
-                                    <Link to="/">view details <BsArrowRight size={24} /></Link>
+                                    <Link to="/">view details <BsArrowRight className={styles.arrowIcon2} size={24} /></Link>
                                 </div>
 
                             </motion.div>
@@ -291,7 +291,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className={styles.etxra}>
+            <div className={styles.extra}>
                 <div className={styles.extraContent}>
                     <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{ once: true }} className={styles.quality}>
                         <h2>Quality & Certifications</h2>
