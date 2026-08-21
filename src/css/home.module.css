@@ -1735,6 +1735,9 @@
 }
 
 @media (max-width:480px) {
+    .processText {
+        align-items: flex-start;
+    }
     .processBoxes {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
