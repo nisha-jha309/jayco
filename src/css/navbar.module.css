@@ -1,0 +1,262 @@
+.nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.192);
+    padding-block: 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+}
+
+.navContent {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    /* gap: 42px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 90px;
+    height: 47px;
+}
+
+.logoIcon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navItem {
+    position: relative;
+}
+
+.navLinks {
+    display: flex;
+    gap: 32px;
+}
+
+.navItem>a {
+    text-decoration: none;
+    color: var(--white);
+    display: flex;
+    gap: 12px;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-regular);
+    text-transform: capitalize;
+    align-items: center;
+}
+.navItem>a:hover{
+    color: var(--orange);
+}
+.activeLink {
+    color: var(--orange) !important;
+}
+
+.subLinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.subLinks>a {
+    text-decoration: none;
+    color: var(--black);
+    padding-block: 5px;
+    white-space: nowrap;
+}
+
+.subLinks>a:hover {
+    color: grey;
+}
+
+/* .subLinks a:not(:last-child){
+    border-bottom:1px solid var(--grey);
+} */
+.rightNav {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.searchIcon {
+    color: var(--white);
+}
+
+.countryDiv {
+   position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.countryDropdown {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 180px;
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    z-index: 1000;
+}
+
+.countryOption {
+    padding: 12px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.countryOption:hover {
+    background: #f5f5f5;
+}
+.globeIcon {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid var(--white);
+    color: var(--white);
+}
+
+.countryName {
+    color: var(--white);
+    font-size: var(--fs-s);
+}
+
+.requestQuoteBtn {
+    text-decoration: none;
+    background-color: var(--orange);
+    padding: 16px;
+    text-transform: capitalize;
+    font-weight: var(--fw-black);
+    color: var(--white);
+    font-size: var(--fs-base);
+}
+
+/*mobile navbar*/
+.mobileNavContent {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menuIcon {
+    color: var(--white);
+}
+
+.menuNav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.menuNavLinks {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(100vh / 8);
+}
+
+.menuNavLinks:not(:last-of-type) {
+    border-bottom: 1px solid var(--black);
+}
+
+.mobileNavLink,
+.mobileActiveLink {
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+    height: 100%;
+    text-decoration: none;
+    padding-top: 8px;
+}
+
+.mobileActiveLink {
+    color: var(--orange) !important;
+}
+
+.menuSubLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuSubLinks a {
+    text-decoration: none;
+    color: var(--black);
+    margin-top:8px;
+    text-align: center;
+}
+.menuSubLinks a:last-of-type{
+    margin-bottom: 8px;
+}
+.menuSubLinks a:hover {
+    color: grey;
+}
+
+@media (max-width:1440px) {
+    .nav {
+        padding: 20px 16px;
+    }
+
+    .logo {
+        width: 70px;
+        height: auto;
+    }
+
+    .navLinks {
+        gap: 20px;
+    }
+
+    .navLinks>a {
+        gap: 8px;
+    }
+
+    .requestQuoteBtn {
+        padding: 12px;
+        font-size: var(--fs-s);
+    }
+}
+
+@media (max-width:1280px) {
+    .navLinks>a {
+        font-size: var(--fs-xs);
+    }
+
+    .requestQuoteBtn {
+        font-size: var(--fs-xs);
+    }
+}
+
+@media (max-width:1200px) {
+    .navContent {
+        display: none;
+    }
+
+    .mobileNavContent {
+        display: flex;
+    }
+}
+
+@media (max-width:990px) {
+    .nav {
+        padding-block: 10px;
+    }
+
+    .requestQuoteBtn {
+        padding: 10px;
+    }
+}
